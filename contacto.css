@@ -1,0 +1,92 @@
+.contacto {
+    padding: 10rem 0;
+}
+
+.header-contacto {
+    text-align: center;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: 0.75rem 1.75rem;
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    font-size: 0.95rem;
+    /* transition → efecto suave al hacer hover
+     Curso: sección "Transiciones", 10:43:28 */
+    transition: transform var(--transition-fast),
+        box-shadow var(--transition-fast),
+        background var(--transition-fast);
+}
+
+
+.container-contacto {
+    margin: auto;
+    padding: 1.5rem;
+}
+
+.contact__grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: start;
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+.contact-form {
+    background: #0a0b1e;
+    border: 1px solid #6c63ff40;
+    border-radius: 24px;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #a0a3b8;
+}
+
+/* Estilos de los campos de formulario */
+.form-input {
+    background: #12142e;
+    border: 1px solid #6c63ff40;
+    border-radius: 8px;
+    padding: 0.8rem 1.1rem;
+    color: #ffffff;
+    font-size: 0.95rem;
+    /* outline: se controla en focus para accesibilidad
+     Curso: sección "Contorno (outline)", 11:16:34 */
+    outline: none;
+}
+
+/* Pseudoclase :focus → campo seleccionado por el usuario
+   Curso: sección "Pseudoclases", 9:04:51 */
+.form-input:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.15);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 130px;
+    min-width: 100%;
+}
