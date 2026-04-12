@@ -5,79 +5,11 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    background-color: #2A1B40;
-    color: #F2E2CE;
-    min-width: 100dvw;
-    
-    width: fit-content;
-    height: fit-content;
-    min-height: 100dvh;
-}
-
-.navbar-container {
-    position: fixed;
-    top: 0;
+    background-color: #2e1a47;
+    color:azure;
+    min-width: 100dvh;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    z-index: 10;
-    background-color: #2A1B40;
-
-    /* border: 1px solid red; */
-    .logo {
-        font-size: 2rem;
-        padding: 0 2rem;
-    }
-
-    .links-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        width: 50%;
-        padding: 0 2rem;
-
-        a:hover {
-            color: #F25CA2;
-            font-weight: bold;
-        }
-    }
-}
-
-.footer-container {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    background-color: #1B0B2A;
-
-    .logo-email-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .footer-logo-name {
-            font-size: 1.5rem;
-        }
-
-        .blog-email {
-            font-size: 1rem;
-        }
-    }
-
-    .footer-members-list {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 50%;
-        padding: 0 2rem;
-    }
+  
 }
 
 /* Móviles grandes / Tablets pequeñas */

@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="index.css">
@@ -11,85 +13,233 @@
 </head>
 
 <body>
-
-    <nav class="navbar-container">
-        <div class="logo">
-            Stark Core Gaming
+    <!-- Primer navbar para logo y busqueda -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap:8px" href="index.html">Stark Core Gaming <img
+                    src="assets/LogoG.png" alt="Logostarkgamming" class="logo-navbar"></a>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-success buscador" type="submit">Search</button>
+            </form>
         </div>
-        <div class="links-container">
-            <a href="index.html">Inicio</a>
-            <a href="quienessomos.html">¿Quienes somos?</a>
-            <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <!-- Banner gamer -->
+    <section class="banner">
+        <h1>Stark Core Gaming</h1>
+        <p>Tu mundo gamer empieza aquí</p>
+        <a class="btn btn-secondary" href="quienessomos.html">Explorar</a>
+    </section>
+
+
+    <!-- aqui comienza segundo navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+
+            <!-- el logo de la barra -->
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-gamepad"
+                    style="color: rgb(240, 230, 210);"></i></a>
+
+            <!-- que cambie cuando esta en vista movil, lo trea el navbar de bt -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- los links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quienessomos.html">¿Quiénes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </nav>
 
     <!-- Contenido acá -->
+    <div class="barra">
+        <span class="etiqueta-titulo">Noticias y Eventos</span>
+    </div>
 
-    <div class="main-content">
 
-        <p class="introduction">Bienvenido a Stark Core Gaming, tu destino para la mejor experiencia de juego.</p>
+    <!-- columnas de tarjetas -->
+    <div class="contenedor-columnas mt-4">
+        <div class="container text-center">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 tarjeta">
+                    <section class="seccion-juegos">
+                        <img src="assets/noticiauno.webp" alt="noticiauno">
+                        <h4 class="titulo-seccion">Un nuevo calculo sobre el precio de PS6 rebaja las previsiones: no
+                            llegaria a 1000 dolares y apuntaria a 600-800</h4>
+                        <span class="seccion-contenido">Un nuevo informe sugiere que el precio de la próxima PlayStation
+                            6 sería más bajo de lo
+                            que se esperaba inicialmente, alejándose de los 1000 dólares y situándose entre los 600 y
+                            800 dólares. Según las estimaciones, el coste de fabricación rondaría los 760 dólares, lo
+                            que permitiría a Sony ajustar su precio final siguiendo la estrategia de generaciones
+                            anteriores. Además, se recuerda que las consolas no suelen generar grandes ganancias
+                            directas, ya que las compañías obtienen beneficios a través de juegos y servicios. Factores
+                            como el costo de los componentes y el mercado influirán en el precio definitivo. De
+                            confirmarse, la PS6 llegaría con un costo elevado, pero más accesible para los
+                            jugadores.</span>
+                    </section>
+                </div>
 
-        <div class="carrusel">
-            <div class="pista">
-                <img src="./img1.jpg" class="slide activo">
-                <img src="./img2.jpg" class="slide">
-                <img src="./img3.jpg" class="slide">
-            </div>
-            <div class="controles">
-                <button id="anterior">⬅</button>
-                <button id="siguiente">➡</button>
-            </div>
-        </div>
+                <div class="col-md-4 tarjeta">
+                    <section class="seccion-juegos">
+                        <img src="assets/noticiados.webp" alt="noticiadosCrimsonDesert">
+                        <h4 class="titulo-seccion">Crimson Desert se actualiza con un parche que mejora el viaje rapido,
+                            el campamento y la velocidad de las escenas</h4>
+                        <span class="seccion-contenido">El videojuego Crimson Desert ha recibido un nuevo parche que
+                            introduce mejoras importantes en la experiencia de juego, especialmente en el sistema de
+                            viaje rápido, el campamento y la velocidad de las escenas. Esta actualización busca hacer el
+                            desplazamiento más ágil y optimizar aspectos que los jugadores habían señalado como lentos o
+                            poco prácticos. Además, se han aplicado ajustes generales para mejorar la fluidez y
+                            comodidad durante la partida. El estudio continúa así afinando el juego tras su lanzamiento,
+                            teniendo en cuenta el feedback de la comunidad.</span>
+                    </section>
+                </div>
 
-        <div class="contenedor-columnas">
-            <div class="contenedor-columnas">
+                <div class="col-md-4 tarjeta">
+                    <section class="seccion-juegos">
+                        <img src="assets/noticiatres.webp" alt="noticiadosCrimsonDesert">
+                        <h4 class="titulo-seccion">Es un RPG indie y muchos lo comparan con Gothic o Risen: ya a la
+                            vetna YAR: Forgotten Throne en Steam</h4>
+                        <span class="seccion-contenido">El RPG indie YAR: Forgotten Throne ya está disponible en Steam y
+                            ha llamado la atención de la comunidad por su estilo clásico, siendo comparado con sagas
+                            como Gothic o Risen. Este juego de mundo abierto propone una aventura ambientada en un
+                            universo inspirado en la mitología eslava, donde los jugadores exploran, combaten y toman
+                            decisiones que afectan la historia. Tras su paso por acceso anticipado, el título ha sido
+                            bien recibido, acumulando valoraciones muy positivas entre los usuarios. Además, destaca por
+                            su mezcla de exploración libre, combate en tiempo real y múltiples actividades secundarias.
+                            Con su lanzamiento completo, busca consolidarse como una propuesta atractiva para los fans
+                            de los RPG tradicionales</span>
+                    </section>
+                </div>
 
-                <section class="seccion-juegos">
-                    <h2 class="titulo-seccion">Novedades del Día </h2>
-                    <div class="lista-items">
-                        <a href="https://store.steampowered.com/agecheck/app/1245620/" class="item-link">Elden Ring</a>
-                        <a href="https://bethesda.net/es/game/starfield" class="item-link">Starfield</a>
-                        <a href="https://store.steampowered.com/agecheck/app/1091500/" class="item-link">Cyberpunk
-                            2077</a>
-                        <a href="https://store.steampowered.com/app/1240440/Halo_Infinite/" class="item-link">Halo
-                            Infinite</a>
-                    </div>
-                </section>
 
-                <section class="seccion-noticias">
-                    <h2 class="titulo-seccion">Noticias y Eventos </h2>
-                    <div class="lista-items">
-                        <article class="tarjeta-evento">
-                            <h3>Gran Evento de Tecnología</h3>
-                            <p>¡Co Crea 5.0 Bogotá!</p>
-                        </article>
-
-                        <article class="tarjeta-evento">
-                            <p>Explorando las últimas tendencias en el desarrollo de videojuegos.</p>
-                        </article>
-                    </div>
-                </section>
+                <div class="col-md-4 tarjeta">
+                    <section class="seccion-juegos">
+                        <img src="assets/Comicon.png" alt="noticiadosCrimsonDesert">
+                        <h4 class="titulo-seccion">Llega la Comic Con Colombia 2026: el mayor evento geek aterriza en
+                            Bogotá </h4>
+                        <span class="seccion-contenido">La Comic Con Colombia regresará a Bogotá del 26 al 29 de junio
+                            de 2026 en Corferias, consolidándose como uno de los eventos más importantes de la cultura
+                            geek en el país. Durante cuatro días, los asistentes podrán disfrutar de cómics, anime,
+                            videojuegos, cosplay y la presencia de invitados nacionales e internacionales. El evento
+                            reunirá a miles de fanáticos con actividades, exposiciones y experiencias interactivas para
+                            todas las edades. Además, contará con una amplia agenda que incluye charlas, concursos y
+                            zonas temáticas dedicadas al entretenimiento. Se espera que esta nueva edición supere las
+                            anteriores y continúe creciendo como un referente de la cultura pop en Colombia</span>
+                    </section>
+                </div>
 
             </div>
         </div>
     </div>
 
+
+    <!-- titulo para meter el carrusel y genera espacio -->
+    <div class="recomendados">
+        <span class="etiqueta-top">¡Top 10 juegos que debes probar!</span>
+    </div>
+
+    <span class="text-center fw-bold">Las opciones no están organizadas por prioridad, sino como sugerencias
+        generales</span>
+
+    <!-- Carousel después top 10 juegos del momento -->
+    <div id="carouselExample" class="carousel slide mt-4">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/CrimsonDesert.jpg" class="d-block w-100" alt="CrimsonDesert">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/dragonsdogmaII.webp" class="d-block w-100" alt="dragonsdogmaII">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/FableI.jpg" class="d-block w-100" alt="FableI">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/Hollowknight.jpg" class="d-block w-100" alt="Hollowknight">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/ItTaketwo.jpg" class="d-block w-100" alt="ItTaketwo">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/KigdomComeDeliveranceII.jpg" class="d-block w-100" alt="KigdomComeDeliveranceII">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/MafiaREmake.webp" class="d-block w-100" alt="MafiaREmake">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/Nierautomata.jpg" class="d-block w-100" alt="Nierautomata">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/RedDeadRedemption2.webp" class="d-block w-100" alt="RedDeadRedemption2">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/ResidentEvilrequiem.jpeg" class="d-block w-100" alt="juego3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
     <!-- fin contenido -->
 
-    <footer class="footer-container">
-        <span class="logo-email-container">
-            <span class="footer-logo-name">Stark Core Gaming</span>
-            <span class="blog-email">blog@starkcoregaming.com</span>
-        </span>
-        <ul class="footer-members-list">
-            <li>Camilo Castellanos</li>
-            <li>Marcia Baquero</li>
-            <li>Daniel Vega</li>
-            <li>Leider Merchan</li>
-            <li>Yesica González</li>
-        </ul>
-    </footer>
-    <script src="index.js"></script>
+    <div class="container-fluid text-center footer">
+        <div class="row">
+            <div class="col" style="color: azure;">
+                <span class="footer-logo-name fw-bold stark-img">Stark Core Gaming
+                    <img src="assets/LogoG.png" alt="Logo">
+                </span>
+            </div>
+            <div class="col" style="color: azure;">
+                <ul class="lista-redes-comtacto">
+                    <li class="fw-bold redes">Nuestras redes</li>
+                    <li> <i class="fa-solid fa-envelope" style="color: rgb(240, 230, 210);"></i>
+                        blog@starkcoregaming.com</li>
+                    <li> <i class="fa-solid fa-phone" style="color: rgb(240, 230, 210);"></i> +57 000 0000 000</li>
+                    <li>
+                        <a href="https://instagram.com" target="_blank"> <i class="fa-brands fa-instagram"
+                                style="color: rgb(240, 230, 210);"></i> Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.co" target="_blank"> <i class="fa-brands fa-square-facebook"
+                                style="color: rgb(240, 230, 210);"></i> Facebook</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col" style="color: azure;">
+                <ul class="footer-members-list">
+                    <li class="fw-bold">Miembros del Staff <i class="fa-solid fa-users"
+                            style="color: rgb(240, 230, 210);"></i>
+                    </li>
+                    <li>Camilo Castellanos</li>
+                    <li>Marcia Baquero</li>
+                    <li>Daniel Vega</li>
+                    <li>Leider Merchan</li>
+                    <li>Yesica González</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
