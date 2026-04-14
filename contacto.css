@@ -1,50 +1,60 @@
+
+.tituloEspecial{
+    font-family: 'Bitcount Grid Double', sans-serif;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #F25CA2;
+    box-shadow: 0 0 15px rgba(242, 92, 162, 0.4);
+    margin-bottom: 2rem;
+}
+
+.card-header {
+    background: transparent;
+    color: rebeccapurple;
+    border-bottom: 1px solid rebeccapurple;
+    font-size: 1.2rem;
+    padding: 5%;
+}
+
 .contacto {
-    padding: 10rem 0;
+    padding: 5%;
 }
 
 .header-contacto {
+    margin-bottom: 10%;
     text-align: center;
 }
 
 .btn {
     display: inline-flex;
-    align-items: center;
-    gap: var(--space-xs);
-    padding: 0.75rem 1.75rem;
-    border-radius: var(--radius-full);
-    font-weight: 600;
-    font-size: 0.95rem;
-    /* transition → efecto suave al hacer hover
-     Curso: sección "Transiciones", 10:43:28 */
-    transition: transform var(--transition-fast),
-        box-shadow var(--transition-fast),
-        background var(--transition-fast);
+    background-color: rebeccapurple;
+    color: #ffff;
+    border-color: darkmagenta;
+    border-radius: 5%;
 }
 
 
 .container-contacto {
-    margin: auto;
+    max-width: 600px; /* ajusta el tamaño que quieras */
+    margin: 0 auto;
     padding: 1.5rem;
 }
 
 .contact__grid {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 4rem;
-    align-items: start;
-    width: 70%;
-    margin: 0 auto;
-}
-
-
-.contact-form {
-    background: #0a0b1e;
-    border: 1px solid #6c63ff40;
-    border-radius: 24px;
-    padding: 4rem;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.contact__form-wrap {
+    background: rgba(27, 11, 42, 0.9);
+    border: 1px solid #F25CA2;
+    box-shadow: 0 0 15px rgba(242, 92, 162, 0.4);
+    border-radius: 15px;
+    padding: 5%;
 }
 
 .form-row {
@@ -78,15 +88,48 @@
     outline: none;
 }
 
-/* Pseudoclase :focus → campo seleccionado por el usuario
-   Curso: sección "Pseudoclases", 9:04:51 */
-.form-input:focus {
-    border-color: var(--color-primary);
-    box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.15);
+.form-control {
+    background: #ffffff;
+    border: 1px solid #6c63ff40;
+    border-radius: 8px;
+    padding: 0.8rem 1.1rem;
+    color: rebeccapurple;
+    font-size: 0.95rem;
+    outline: none;
 }
 
-.form-textarea {
-    resize: vertical;
-    min-height: 130px;
-    min-width: 100%;
+.form-control:focus {
+    background: #ffffff;
+    color: rebeccapurple;
+    border-color: #F25CA2;
+    box-shadow: 0 0 0 3px rgba(242, 92, 162, 0.15);
+}
+
+.form-control:hover {
+    border-color: #F25CA2;
+}
+
+
+ #submitBtn{
+    border: 1px solid darkmagenta;
+    box-shadow: 0 0 15px darkmagenta;
+ }
+
+
+#submitBtn:hover{
+    background-color: darkmagenta;
+    border: 1px solid darkmagenta;
+    box-shadow: 0 0 15px darkmagenta;
+}
+
+.tituloPieEspecial{
+    font-family: 'Bitcount Grid Double', sans-serif;
+}
+
+.tituloMiebrosEspecial{
+    font-family: 'Bitcount Grid Double', sans-serif;
+}
+
+.TituloRedeEspecial{
+    font-family: 'Bitcount Grid Double', sans-serif;
 }

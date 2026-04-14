@@ -3,6 +3,87 @@ body {
 }
 
 
+.tituloEspecial{
+    font-family: 'Bitcount Grid Double', sans-serif;
+}
+
+
+
+.title {
+    padding: 5%;
+    color: #F0E6D2;
+    font-size: 28px;
+    text-shadow: 0 0 5px #bb00ff, 0 0 10px #bb00ff;
+}
+
+
+.tituloTarjeta {
+    padding: 2%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.tituloTarjeta i {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 5%;
+    font-size: 150%;
+}
+
+.about-section {
+    flex-direction: column;
+    justify-content: space-evenly; 
+    height: 100%;
+}
+
+
+
+
+.footer {
+    background-color: #212529;
+    color: #F0E6D2;
+    padding: 30px 20px;
+    margin-top: 50px;
+    position: static;
+    line-height: 2.0;
+}
+
+.lista-redes-comtacto a {
+    color: #F0E6D2; /* mismo color que tu texto */
+    text-decoration: none; /* opcional: quita el subrayado */
+}
+
+.tituloPieEspecial{
+    font-family: 'Bitcount Grid Double', sans-serif;
+}
+
+.tituloMiebrosEspecial{
+    font-family: 'Bitcount Grid Double', sans-serif;
+}
+
+.TituloRedeEspecial{
+    font-family: 'Bitcount Grid Double', sans-serif;
+}
+
+.stark-img img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.lista-redes-comtacto,
+.footer-members-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lista-redes-comtacto li a:hover {
+    color: darkmagenta;
+}
+
+
 .about-container {
     padding: 3rem 2rem;
     max-width: 900px;
@@ -46,6 +127,8 @@ body {
 .about-section:hover {
     transform: scale(1.02);
 }
+
+
 
 /* Móviles grandes / Tablets pequeñas */
 @media (min-width: 481px) and (max-width: 767px) {

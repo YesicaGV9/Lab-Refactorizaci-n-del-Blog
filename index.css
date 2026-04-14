@@ -40,6 +40,10 @@ input:hover {
 }
 
 
+.tituloEspecial{
+    font-family: 'Bitcount Grid Double', sans-serif;
+}
+
 #navbarNav li a:hover {
     color: fuchsia;
 }
@@ -212,6 +216,19 @@ input:hover {
     padding: 30px 20px;
     margin-top: 50px;
     position: static;
+    line-height: 2.0;
+}
+
+.tituloPieEspecial{
+    font-family: 'Bitcount Grid Double', sans-serif;
+}
+
+.tituloMiebrosEspecial{
+    font-family: 'Bitcount Grid Double', sans-serif;
+}
+
+.TituloRedeEspecial{
+    font-family: 'Bitcount Grid Double', sans-serif;
 }
 
 .stark-img img {
